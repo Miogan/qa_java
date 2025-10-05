@@ -63,11 +63,11 @@ public class MockitoLionTest {
         // Создаем объект
         Lion lion = new Lion("Самец");
         lion.setFeline(feline);
-        int expectedCount = 3;
-        when(feline.getKittens()).thenReturn(expectedCount);
+        // переменная удалена
+        when(feline.getKittens()).thenReturn(1);
 
         // Проверяем возвращаемое значение с ожидаемым
-        assertEquals(expectedCount, lion.getKittens());
+        assertEquals(1, lion.getKittens());
         // Удален verify
     }
 
@@ -76,7 +76,7 @@ public class MockitoLionTest {
         // Создаем объект
         Lion lion = new Lion("Самка");
         lion.setFeline(feline);
-        List<String> expectedFood = Arrays.asList("Животные", "Птицы");
+        List<String> expectedFood = Arrays.asList("Животные", "Птицы", "Рыба"); // Исправление. Добавлена потерянная рыба
         when(feline.getFood("Хищник")).thenReturn(expectedFood);
 
         // Проверяем возвращаемое значение с ожидаемым
@@ -103,10 +103,10 @@ public class MockitoLionTest {
 
         lion.setFeline(newFeline);
         // Подменяем получаемое значение
-        when(newFeline.getKittens()).thenReturn(5);
+        when(newFeline.getKittens()).thenReturn(1); // Исправление. Скорректировано по замечанию к testGetKittens
 
         // Проверяем что филин создался и отрабатывает свой хлеб
-        assertEquals(5, lion.getKittens());
+        assertEquals(1, lion.getKittens());
         // Удален verify
     }
 }
