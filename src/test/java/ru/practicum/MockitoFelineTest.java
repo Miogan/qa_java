@@ -52,10 +52,9 @@ public class MockitoFelineTest {
     @Test
     public void testGetKittensWithoutParameters() {
         // Подменяем возвращаемое значение
-
         when(feline.getKittens()).thenReturn(1);
 
-        // // Проверяем возвращаемое значение с ожидаемым
+        // Проверяем возвращаемое значение с ожидаемым
         assertEquals(1, feline.getKittens());
         // Удален verify
     }
@@ -87,7 +86,7 @@ public class MockitoFelineTest {
         int expectedCount = -3;
         when(feline.getKittens(expectedCount)).thenReturn(expectedCount);
 
-        //  // Проверяем возвращаемое значение с ожидаемым
+        // Проверяем возвращаемое значение с ожидаемым
         assertEquals(expectedCount, feline.getKittens(expectedCount));
         // Удаен verify
     }
