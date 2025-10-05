@@ -1,4 +1,4 @@
-package qa_java.src.test.java.practicum;
+package ru.practicum;
 
 import org.junit.Before;
 import org.junit.Test;
