@@ -14,7 +14,7 @@ public class FeilineUnitTest {
 
     @Before
     public void setUp() {
-        feline = new com.example.Feline();
+        feline = new Feline();
     }
 
     @Test
@@ -36,8 +36,12 @@ public class FeilineUnitTest {
 
 
     @Test
-    public void testGetKittensBoundaryValues() {
+    public void testGetKittensMaxValues() { // тест разбит на две части макс и мин
         assertEquals(Integer.MAX_VALUE, feline.getKittens(Integer.MAX_VALUE));
+    }
+
+    @Test
+    public void testGetKittensMinValues() {
         assertEquals(Integer.MIN_VALUE, feline.getKittens(Integer.MIN_VALUE));
     }
 
