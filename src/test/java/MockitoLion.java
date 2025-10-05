@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.example.Feline;
+import com.example.Feline; //Исправление. Добавлен импорт класса
 import com.example.Lion;
 
 import java.util.Arrays;

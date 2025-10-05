@@ -3,8 +3,9 @@ package qa_java.src.test.java.practicum;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.example.Feline;
 import java.util.List;
+
+import com.example.Feline; //Исправление. Добавлен импорт класса
 
 import static org.junit.Assert.assertEquals;
 

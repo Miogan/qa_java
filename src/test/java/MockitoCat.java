@@ -1,15 +1,15 @@
 package qa_java.src.test.java.practicum;
 
+import com.example.Cat; //Исправление. Добавлен импорт класса. Возможно, слетел при решении проблем с PR гит
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.example.Cat;
-import com.example.Feline;
-
 import java.util.Arrays;
 import java.util.List;
+
+import com.example.Feline; //Исправление. Добавлен импорт класса
 
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.verify;

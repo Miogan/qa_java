@@ -5,10 +5,10 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.example.Feline;
-
 import java.util.Arrays;
 import java.util.List;
+
+import com.example.Feline; //Исправление. Добавлен импорт класса
 
 import static org.mockito.Mockito.verify;
 import static org.junit.Assert.assertEquals;

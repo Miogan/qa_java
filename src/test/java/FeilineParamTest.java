@@ -1,4 +1,4 @@
-package qa_java.src.test.java.practicum;
+package ru.practicum;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,8 +7,7 @@ import com.example.Feline;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class FeilineParamTest {
