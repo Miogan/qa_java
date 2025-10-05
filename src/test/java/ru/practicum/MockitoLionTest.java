@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class MockitoLion {
+public class MockitoLionTest {
     @Mock
     private Feline feline;
 
